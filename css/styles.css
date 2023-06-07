@@ -339,7 +339,6 @@ button {
   padding-bottom: 110px;
 }
 .reviews-text {
-  font-weight: 700;
   font-size: 16px;
   line-height: calc(25 / 16);
   text-align: justify;
@@ -351,7 +350,6 @@ button {
   color: var(--color-main-red);
 }
 .reviews-title {
-  font-weight: 700;
   font-size: 48px;
   line-height: calc(60 / 48);
   letter-spacing: 0.03em;
@@ -373,23 +371,21 @@ height: 218px;
   border-radius: 5px;
 }
 .reviews-subtitle {
-  font-weight: 700;
   font-size: 16px;
   line-height: calc(24 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black-000000);
-  padding-top: 68.53px;
-  margin-bottom: 49.38px;
+  padding-top: 69px;
+  margin-bottom: 50px;
 }
 .small-text {
-  font-weight: 400;
   font-size: 11px;
   line-height: var(17 / 11);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-light-black);
-  max-width: 333.58px;
+  max-width: 334px;
   margin-left: auto;
   margin-right: auto;
 }
