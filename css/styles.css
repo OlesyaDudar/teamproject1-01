@@ -6,7 +6,8 @@
   --color-light-black: #696969;
   --background-main: #ffffff;
   --color-black-000000: #000000;
-  --color-reviews: #F7F7F7;
+  --color-reviews: #f7f7f7;
+  --color-menu-btn: #f2f2f2;
 }
 
 body {
@@ -75,7 +76,6 @@ button {
   display: flex;
   align-items: center;
 }
-
 
 .heder-nav-list {
   display: flex;
@@ -172,7 +172,7 @@ button {
 }
 /**
   |============================
-  | Abaut styles
+  | About styles
   |============================
 */
 .about-section {
@@ -328,6 +328,78 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+
+/**
+  |============================
+  | Portfolio styles
+  |============================
+*/
+
+.portfolio {
+}
+
+.portfolio-container {
+  padding-top: 130px;
+  padding-bottom: 92px;
+}
+
+.portfolio-subtitle {
+  font-size: 16px;
+  line-height: calc(25 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-light-black);
+  margin-bottom: 24px;
+}
+.portfolio-title {
+  max-width: 457px;
+  font-size: 48px;
+  line-height: calc(60 / 48);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-black-000000);
+  margin: 0 auto 48px;
+}
+
+.portfolio-title span {
+  color: var(--color-main-red);
+}
+
+.portfolio-menu {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.portfolio-menu-item {
+}
+.portfolio-menu-btn {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.03em;
+  color: var(--color-black-000000);
+  background-color: var(--color-menu-btn);
+  border-radius: 5px;
+  border: none;
+  padding: 10px 25px;
+}
+
+.portfolio-menu-btn:hover,
+.portfolio-menu-btn:focus {
+  background-color: var(--color-main-red);
+  color: var(--background-main);
+  font-weight: 700;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.portfolio-list-item {
+}
+
 /**
   |============================
   | Reviews styles
@@ -361,12 +433,12 @@ button {
   color: var(--color-main-red);
 }
 .reviews-list {
-display: flex;
-gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 .reviews-item {
-width: calc(100% - 60px);
-height: 218px;
+  width: calc(100% - 60px);
+  height: 218px;
   background: var(--background-main);
   border-radius: 5px;
 }
