@@ -52,11 +52,13 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 /**
   |============================
   | Header styles
   |============================
 */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -103,11 +105,13 @@ button {
   border: none;
   border-radius: 5px;
 }
+
 /**
   |============================
   | Hero styles
   |============================
 */
+
 .hero {
   background-color: var(--color-black-202020);
   padding-top: 184px;
@@ -170,11 +174,13 @@ button {
   background: var(--color-main-red);
   color: var(--background-main);
 }
+
 /**
   |============================
   | About styles
   |============================
 */
+
 .about-section {
   padding: 112px 0;
 }
@@ -191,10 +197,8 @@ button {
   font-size: 16px;
   line-height: calc(25 / 16);
   margin-bottom: 19px;
-
   text-align: justify;
   letter-spacing: 0.03em;
-
   color: var(--color-light-black);
 }
 
@@ -219,10 +223,8 @@ button {
 .about-text {
   font-size: 16px;
   line-height: calc(25 / 16);
-
   text-align: justify;
   letter-spacing: 0.03em;
-
   color: var(--color-light-black);
   max-width: 534px;
   margin-bottom: 35px;
@@ -231,29 +233,31 @@ button {
 .about-button {
   font-size: 16px;
   line-height: calc(24 / 16);
-
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--background-main);
   background-color: var(--color-main-red);
   padding: 12px 64px;
   border-radius: 5px;
   border: none;
 }
+
 /**
   |============================
   | Services styles
   |============================
 */
+
 .services {
   background: var(--color-black-202020);
   padding-top: 120px;
   padding-bottom: 102px;
 }
+
 .services-container {
   display: flex;
 }
+
 .services-subtitle {
   font-weight: 700;
   font-size: 16px;
@@ -276,6 +280,7 @@ button {
 .services-accent {
   color: var(--color-main-red);
 }
+
 .services-text {
   font-size: 16px;
   line-height: calc(25 / 16);
@@ -285,6 +290,7 @@ button {
   margin-bottom: 40px;
   max-width: 534px;
 }
+
 .services-btn {
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -296,6 +302,7 @@ button {
   border: none;
   padding: 12px 62px;
 }
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -303,12 +310,14 @@ button {
   gap: 61px 20px;
   margin-left: auto;
 }
+
 .services-list-item {
   background: var(--background-main);
   border-radius: 5px;
   width: calc((100% - 20px) / 2);
   justify-content: center;
 }
+
 .services-list-title {
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -318,6 +327,7 @@ button {
   padding-top: 54px;
   margin-bottom: 13px;
 }
+
 .services-list-text {
   font-size: 11px;
   line-height: calc(17 / 11);
@@ -351,6 +361,7 @@ button {
   color: var(--color-light-black);
   margin-bottom: 24px;
 }
+
 .portfolio-title {
   max-width: 457px;
   font-size: 48px;
@@ -374,6 +385,7 @@ button {
 
 .portfolio-menu-item {
 }
+
 .portfolio-menu-btn {
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -397,6 +409,7 @@ button {
   gap: 24px;
   justify-content: center;
 }
+
 .portfolio-list-item {
 }
 
@@ -405,11 +418,13 @@ button {
   | Reviews styles
   |============================
 */
+
 .reviews {
   background: var(--color-black-202020);
   padding-top: 111px;
   padding-bottom: 110px;
 }
+
 .reviews-text {
   font-size: 16px;
   line-height: calc(25 / 16);
@@ -418,9 +433,11 @@ button {
   color: var(--color-reviews);
   margin-bottom: 19px;
 }
+
 .reviews-text-red {
   color: var(--color-main-red);
 }
+
 .reviews-title {
   font-size: 48px;
   line-height: calc(60 / 48);
@@ -429,19 +446,23 @@ button {
   max-width: 528px;
   margin-bottom: 72px;
 }
+
 .reviews-title-red {
   color: var(--color-main-red);
 }
+
 .reviews-list {
   display: flex;
   gap: 30px;
 }
+
 .reviews-item {
   width: calc(100% - 60px);
   height: 218px;
   background: var(--background-main);
   border-radius: 5px;
 }
+
 .reviews-subtitle {
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -451,13 +472,135 @@ button {
   padding-top: 69px;
   margin-bottom: 50px;
 }
+
 .small-text {
   font-size: 11px;
-  line-height: var(17 / 11);
+  line-height: calc(17 / 11);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-light-black);
   max-width: 334px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/**
+ |============================
+ | Footer
+ |============================
+*/
+
+.footer {
+  background-color: var(--color-black-202020);
+  padding-bottom: 40px;
+  padding-top: 76px;
+}
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid var(--background-main);
+}
+
+.footer-main-resurs {
+  display: block;
+  margin-right: 105px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  margin-bottom: 40px;
+  color: var(--background-main);
+}
+
+.footer-text {
+  max-width: 345px;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  text-align: justify;
+  letter-spacing: 0.03em;
+  color: var(--color-gray-background);
+}
+
+.footer-list-icon {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+}
+
+.footer-list-item {
+  color: var(--background-main);
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: calc(41 / 18);
+  font-style: normal;
+}
+
+.footer-active {
+  display: flex;
+  gap: 94px;
+  margin-bottom: 86px;
+}
+
+.footer-title {
+  margin-right: 33px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  color: var(--background-main);
+  margin-bottom: 33px;
+}
+
+.footer-copyright {
+  display: flex;
+}
+
+.footer-copyright-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: var(--background-main);
+  margin-top: 42px;
+  margin-right: 337px;
+}
+
+.footer-copyright-list {
+  margin-top: 34px;
+  display: flex;
+  
+}
+
+.footer-website {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: var(--background-main);
+  margin-right: 20px;
+}
+
+.footer-privacy {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: var(--background-main);
+  margin-right: 26px;
+}
+
+.footer-cookies {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: var(--background-main);
 }
