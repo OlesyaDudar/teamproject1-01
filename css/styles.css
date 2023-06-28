@@ -116,6 +116,11 @@ button {
   background-color: var(--color-black-202020);
   padding-top: 184px;
   padding-bottom: 190px;
+ background-image:  linear-gradient(rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 0.5)),  
+    url(../images/graphic-designers-meeting.jpg);/*filter: grayscale(1); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .hero-text {
@@ -149,6 +154,19 @@ button {
   margin-left: auto;
   text-align: center;
   margin-bottom: 22px;
+}
+.canvas-underline{
+  position: relative;
+}
+.canvas-underline::after{
+  content: "";
+  width: 563px;
+  height: 2px;
+  background: var(--color-main-red);
+position: absolute;
+top:100%;
+left:0;
+
 }
 
 .hero-btns-list {
@@ -197,16 +215,28 @@ button {
   font-size: 16px;
   line-height: calc(25 / 16);
   margin-bottom: 19px;
-  text-align: justify;
+  text-align:center;
   letter-spacing: 0.03em;
   color: var(--color-light-black);
+   position: relative;
 }
 
 .about-subtitle-part {
   color: var(--color-main-red);
   font-weight: 700;
+ 
+ 
 }
+.about-subtitle::before{
+  content: "";
+  width: 143px;
+height: 2px;
+background: #D8D8D8;
+position: absolute;
+top: 50%;
+left: 4px;
 
+}
 .about-title {
   font-size: 48px;
   line-height: calc(60 / 48);
@@ -266,6 +296,18 @@ button {
   letter-spacing: 0.03em;
   color: var(--color-gray-background);
   margin-bottom: 19px;
+  position: relative;
+  text-align: center;
+}
+.services-subtitle::before{
+content: "";
+width: 143px;
+height: 2px;
+background: #D8D8D8;
+position: absolute;
+top:50%;
+left: 4px;
+
 }
 
 .services-title {
@@ -428,12 +470,23 @@ button {
 .reviews-text {
   font-size: 16px;
   line-height: calc(25 / 16);
-  text-align: justify;
   letter-spacing: 0.03em;
   color: var(--color-reviews);
   margin-bottom: 19px;
+  position: relative;
+  text-align: center;
+  max-width: 528px;
 }
+.reviews-text::before{
+  content: "";
+  width: 143px;
+height: 2px;
+background: #D8D8D8;
+position: absolute;
+top:50%;
+left:4px;
 
+}
 .reviews-text-red {
   color: var(--color-main-red);
 }
@@ -462,8 +515,28 @@ button {
   background: var(--background-main);
   border-radius: 5px;
   padding-top: 69px;
+  position: relative;
 }
-
+.reviews-icons{
+width: 25px;
+height: 100px;
+position: absolute;
+right:50%;
+transform: translateX(50%);
+fill: #FFF;
+}
+.background-icons{
+ width: 100px; 
+height: 100px;
+position: relative;
+position: absolute;
+background-color:#ff3839;
+border-radius: 50%;
+top: -40%;
+left:50%;
+border: 3px solid #FFF;
+transform: translate(-50%, 50%);
+}
 .reviews-subtitle {
   font-size: 16px;
   line-height: calc(24 / 16);
