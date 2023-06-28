@@ -461,6 +461,7 @@ button {
   height: 218px;
   background: var(--background-main);
   border-radius: 5px;
+  padding-top: 69px;
 }
 
 .reviews-subtitle {
@@ -469,7 +470,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black-000000);
-  padding-top: 69px;
+  
   margin-bottom: 50px;
 }
 
@@ -497,6 +498,7 @@ button {
 }
 
 .footer-top {
+  padding-bottom: 86px;
   display: flex;
   border-bottom: 1px solid var(--background-main);
 }
@@ -548,11 +550,11 @@ button {
 .footer-active {
   display: flex;
   gap: 94px;
-  margin-bottom: 86px;
+  
 }
+.footer-services{margin-right: 33px;}
 
 .footer-title {
-  margin-right: 33px;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(30 / 20);
@@ -562,6 +564,8 @@ button {
 
 .footer-copyright {
   display: flex;
+  padding-top:42px ;
+  align-items: center;
 }
 
 .footer-copyright-text {
@@ -569,32 +573,31 @@ button {
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--background-main);
-  margin-top: 42px;
   margin-right: 337px;
 }
 
 .footer-copyright-list {
-  margin-top: 34px;
+
   display: flex;
   
 }
+.footer-website-list{margin-right: 20px;}
 
 .footer-website {
   font-weight: 300;
   font-size: 16px;
   line-height: 36px;
   text-decoration-line: underline;
-  color: var(--background-main);
-  margin-right: 20px;
+  color: var(--background-main); 
 }
+.footer-privacy-list{ margin-right: 26px;}
 
 .footer-privacy {
   font-weight: 300;
   font-size: 16px;
   line-height: 36px;
   text-decoration-line: underline;
-  color: var(--background-main);
-  margin-right: 26px;
+  color: var(--background-main); 
 }
 
 .footer-cookies {
