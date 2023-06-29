@@ -116,18 +116,40 @@ button {
   background-color: var(--color-black-202020);
   padding-top: 184px;
   padding-bottom: 190px;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(46, 47, 66, 0.5),
       rgba(46, 47, 66, 0.5)
     ),
-    url(../images/graphic-designers-meeting.jpg); /*filter: grayscale(1); */
+    url(../images/graphic-designers-meeting.jpg);  */
+    
+    /*filter: grayscale(1); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.5),
+    rgba(46, 47, 66, 0.5)
+  ), url(../images/graphic-designers-meeting.jpg);
+  filter: grayscale(100%);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.hero-container {
+  position: relative;
+}
+
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .service {
+    .hero::before {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.5),
         rgba(46, 47, 66, 0.5)
@@ -221,6 +243,16 @@ button {
 
 .about-list {
   margin-right: 219px;
+  position: relative;
+}
+.img-item-one {
+
+}
+.img-item-two {
+  z-index: 2;
+  top:186px;
+  left: 234px;
+  position: absolute;
 }
 
 .about-subtitle {
@@ -266,7 +298,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--color-light-black);
   max-width: 534px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .about-button {
@@ -551,8 +583,23 @@ button {
   letter-spacing: 0.03em;
   color: var(--color-black-000000);
 
-  margin-bottom: 50px;
+  margin-bottom: 14px;
 }
+.list-stars {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+.item-stars {
+}
+.icon-stars {
+  fill: #ff3839;
+}
+
 
 .small-text {
   font-size: 11px;
