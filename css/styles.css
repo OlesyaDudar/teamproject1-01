@@ -53,6 +53,20 @@ button {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**
   |============================
   | Header styles
@@ -652,6 +666,124 @@ button {
   margin-right: auto;
 }
 
+/**
+ |============================
+ | Contact us
+ |============================
+*/
+
+.contact {
+  background: #f1f1f1;
+}
+
+.contact-container {
+  padding-top: 25px;
+  display: flex;
+  gap: 12px;
+}
+
+.contact-wrapper {
+}
+
+.contact-subtitle {
+  width: 181px;
+  color: var(--color-main-red);
+  /* text-align: justify; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  /* margin: 0 auto; */
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.contact-subtitle::before {
+  content: '';
+  width: 143px;
+  height: 2px;
+  background: #d8d8d8;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+}
+
+.contact-title {
+  color: var(--color-black-000000);
+  font-size: 48px;
+  line-height: 1.255;
+  letter-spacing: 0.03em;
+  margin-bottom: 31px;
+  /* max-width: 548px; */
+}
+
+.contact-title span {
+  color: var(--color-main-red);
+}
+
+.contact-desc {
+  color: var(--color-light-black);
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  margin-bottom: 23px;
+}
+
+.contact-form {
+}
+
+.form-input {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  background: var(--background-main);
+  margin-bottom: 23px;
+}
+
+.form-input::placeholder {
+  color: var(--color-black-000000);
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.form-message {
+  width: 100%;
+  height: 149px;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  background: var(--background-main);
+  margin-bottom: 33px;
+  resize: none;
+}
+
+.form-message::placeholder {
+  color: var(--color-black-000000);
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 21px;
+}
+
+.form-btn {
+  color: var(--background-main);
+  text-align: center;
+  font-size: 16px;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  width: 181px;
+  height: 48px;
+  border-radius: 5px;
+  background: var(--color-main-red);
+  border: none;
+  cursor: pointer;
+}
 /**
  |============================
  | Footer
