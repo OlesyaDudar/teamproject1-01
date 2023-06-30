@@ -121,21 +121,24 @@ button {
       rgba(46, 47, 66, 0.5)
     ),
     url(../images/graphic-designers-meeting.jpg);  */
-    
-    /*filter: grayscale(1); */
+
+  /*filter: grayscale(1); */
   /* background-repeat: no-repeat;
   background-size: cover; */
   position: relative;
 }
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(
-    rgba(46, 47, 66, 0.5),
-    rgba(46, 47, 66, 0.5)
-  ), url(../images/graphic-designers-meeting.jpg);
+      rgba(46, 47, 66, 0.5),
+      rgba(46, 47, 66, 0.5)
+    ),
+    url(../images/graphic-designers-meeting.jpg);
   filter: grayscale(100%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,11 +148,10 @@ button {
   position: relative;
 }
 
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .hero::before {
+  .hero::before {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.5),
         rgba(46, 47, 66, 0.5)
@@ -246,11 +248,10 @@ button {
   position: relative;
 }
 .img-item-one {
-
 }
 .img-item-two {
   z-index: 2;
-  top:186px;
+  top: 186px;
   left: 234px;
   position: absolute;
 }
@@ -258,8 +259,9 @@ button {
 .about-subtitle {
   font-size: 16px;
   line-height: calc(25 / 16);
+  /* margin: 0 auto; */
   margin-bottom: 19px;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--color-light-black);
   position: relative;
@@ -321,12 +323,12 @@ button {
 
 .services {
   background: var(--color-black-202020);
-  padding-top: 120px;
-  padding-bottom: 102px;
 }
 
 .services-container {
   display: flex;
+  padding-top: 120px;
+  padding-bottom: 102px;
 }
 
 .services-subtitle {
@@ -347,7 +349,7 @@ button {
   background: #d8d8d8;
   position: absolute;
   top: 50%;
-  left: 4px;
+  left: 0px;
 }
 
 .services-title {
@@ -392,8 +394,24 @@ button {
   gap: 61px 20px;
   margin-left: auto;
 }
-
+.services-icons {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 3px solid var(--background-main);
+  background: var(--color-main-red);
+}
+.services-icon {
+}
 .services-list-item {
+  position: relative;
+
   background: var(--background-main);
   border-radius: 5px;
   width: calc((100% - 20px) / 2);
@@ -599,7 +617,6 @@ button {
 .icon-stars {
   fill: #ff3839;
 }
-
 
 .small-text {
   font-size: 11px;
