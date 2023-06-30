@@ -10,6 +10,7 @@
   --color-menu-btn: #f2f2f2;
   --color-additional-background: #f1f1f1;
   --color-grey-border: #cacaca;
+  --color-grey-before: #d8d8d8;
 }
 
 body {
@@ -702,7 +703,7 @@ button {
   content: '';
   width: 143px;
   height: 2px;
-  background: #d8d8d8;
+  background: var(--color-grey-before);
   display: block;
   margin-right: 12px;
 }
