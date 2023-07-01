@@ -63,7 +63,6 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -133,17 +132,9 @@ button {
   background-color: var(--color-black-202020);
   padding-top: 184px;
   padding-bottom: 190px;
-  /* background-image: linear-gradient(
-      rgba(46, 47, 66, 0.5),
-      rgba(46, 47, 66, 0.5)
-    ),
-    url(../images/graphic-designers-meeting.jpg);  */
-
-  /*filter: grayscale(1); */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   position: relative;
 }
+
 .hero::before {
   content: '';
   position: absolute;
@@ -209,9 +200,11 @@ button {
   text-align: center;
   margin-bottom: 22px;
 }
+
 .canvas-underline {
   position: relative;
 }
+
 .canvas-underline::after {
   content: '';
   width: 563px;
@@ -264,8 +257,10 @@ button {
   margin-right: 219px;
   position: relative;
 }
+
 .img-item-one {
 }
+
 .img-item-two {
   z-index: 2;
   top: 186px;
@@ -278,7 +273,7 @@ button {
   line-height: calc(25 / 16);
   margin: 0 auto;
   margin-bottom: 19px;
-  text-align: center;
+  margin-left: 155px;
   letter-spacing: 0.03em;
   color: var(--color-light-black);
   position: relative;
@@ -288,15 +283,17 @@ button {
   color: var(--color-main-red);
   font-weight: 700;
 }
+
 .about-subtitle::before {
   content: '';
   width: 143px;
   height: 2px;
-  background: #d8d8d8;
+  background: var(--color-grey-before);
   position: absolute;
   top: 50%;
-  left: 4px;
+  left: -155px;
 }
+
 .about-title {
   font-size: 48px;
   line-height: calc(60 / 48);
@@ -316,7 +313,6 @@ button {
   text-align: justify;
   letter-spacing: 0.03em;
   color: var(--color-light-black);
-  max-width: 534px;
   margin-bottom: 30px;
 }
 
@@ -358,11 +354,12 @@ button {
   position: relative;
   margin-left: 155px;
 }
+
 .services-subtitle::before {
   content: '';
   width: 143px;
   height: 2px;
-  background: #d8d8d8;
+  background: var(--color-grey-before);
   position: absolute;
   top: 50%;
   left: -155px;
@@ -410,6 +407,7 @@ button {
   gap: 61px 20px;
   margin-left: auto;
 }
+
 .services-icons {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -423,11 +421,12 @@ button {
   border: 3px solid var(--background-main);
   background: var(--color-main-red);
 }
+
 .services-icon {
 }
+
 .services-list-item {
   position: relative;
-
   background: var(--background-main);
   border-radius: 5px;
   width: calc((100% - 20px) / 2);
@@ -485,7 +484,7 @@ button {
   content: '';
   width: 163px;
   height: 2px;
-  background: #d8d8d8;
+  background: var(--color-grey-before);
   position: absolute;
   top: 50%;
   left: 0px;
@@ -495,7 +494,7 @@ button {
   content: '';
   width: 163px;
   height: 2px;
-  background: #d8d8d8;
+  background: var(--color-grey-before);
   position: absolute;
   top: 50%;
   right: 0px;
@@ -566,23 +565,25 @@ button {
 
 .reviews-text {
   font-size: 16px;
+  font-weight: 700;
   line-height: calc(25 / 16);
   letter-spacing: 0.03em;
   color: var(--color-reviews);
   margin-bottom: 19px;
   position: relative;
-  text-align: center;
-  max-width: 528px;
+  margin-left: 155px;
 }
+
 .reviews-text::before {
   content: '';
   width: 143px;
   height: 2px;
-  background: #d8d8d8;
+  background: var(--color-grey-before);
   position: absolute;
   top: 50%;
-  left: 4px;
+  left: -155px;
 }
+
 .reviews-text-red {
   color: var(--color-main-red);
 }
@@ -613,35 +614,38 @@ button {
   padding-top: 69px;
   position: relative;
 }
+
 .reviews-icons {
   width: 25px;
   height: 100px;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  fill: #fff;
+  fill:  #fff;
 }
+
 .background-icons {
   width: 100px;
   height: 100px;
   position: relative;
   position: absolute;
-  background-color: #ff3839;
+  background-color: var(--color-main-red);
   border-radius: 50%;
   top: -40%;
   left: 50%;
   border: 3px solid #fff;
   transform: translate(-50%, 50%);
 }
+
 .reviews-subtitle {
   font-size: 16px;
   line-height: calc(24 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black-000000);
-
   margin-bottom: 14px;
 }
+
 .list-stars {
   display: flex;
   flex-direction: row;
@@ -651,10 +655,12 @@ button {
   align-items: baseline;
   margin-bottom: 14px;
 }
+
 .item-stars {
 }
+
 .icon-stars {
-  fill: #ff3839;
+  fill: var(--color-main-red);
 }
 
 .small-text {
@@ -783,6 +789,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
 /**
  |============================
  | Footer
@@ -835,13 +842,14 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 .footer-link-social {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff3839;
+  background-color: var(--color-main-red);
   border-radius: 50%;
 }
 
@@ -858,13 +866,15 @@ button {
 .social-icon {
   display: flex;
 }
+
 .footer-contact-item {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .footer-icons {
-  fill: #ff3839;
+  fill: var(--color-main-red);
   color: var(--color-black-202020);
 }
 
@@ -881,6 +891,7 @@ button {
   display: flex;
   gap: 94px;
 }
+
 .footer-services {
   margin-right: 33px;
 }
@@ -910,6 +921,7 @@ button {
 .footer-copyright-list {
   display: flex;
 }
+
 .footer-website-list {
   margin-right: 20px;
 }
@@ -921,6 +933,7 @@ button {
   text-decoration-line: underline;
   color: var(--background-main);
 }
+
 .footer-privacy-list {
   margin-right: 26px;
 }
