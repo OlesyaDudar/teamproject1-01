@@ -336,12 +336,12 @@ button {
 
 .services {
   background: var(--color-black-202020);
+  padding-top: 120px;
+  padding-bottom: 102px;
 }
 
 .services-container {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 102px;
 }
 
 .services-subtitle {
@@ -351,8 +351,8 @@ button {
   letter-spacing: 0.03em;
   color: var(--color-gray-background);
   margin-bottom: 19px;
-  position: relative;
-  margin-left: 155px;
+  display: flex;
+  align-items: center;
 }
 
 .services-subtitle::before {
@@ -360,9 +360,7 @@ button {
   width: 143px;
   height: 2px;
   background: var(--color-grey-before);
-  position: absolute;
-  top: 50%;
-  left: -155px;
+  margin-right: 12px;
 }
 
 .services-title {
@@ -461,11 +459,11 @@ button {
 */
 
 .portfolio {
+  padding-top: 130px;
+  padding-bottom: 92px;
 }
 
 .portfolio-container {
-  padding-top: 130px;
-  padding-bottom: 92px;
 }
 
 .portfolio-subtitle {
