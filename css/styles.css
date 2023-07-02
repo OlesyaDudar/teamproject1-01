@@ -410,6 +410,7 @@ button {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,6 +430,7 @@ button {
   border-radius: 5px;
   width: calc((100% - 20px) / 2);
   justify-content: center;
+  padding-top: 54px;
 }
 
 .services-list-title {
@@ -437,7 +439,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black-000000);
-  padding-top: 54px;
+
   margin-bottom: 13px;
 }
 
@@ -619,7 +621,7 @@ button {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  fill:  #fff;
+  fill: #fff;
 }
 
 .background-icons {
