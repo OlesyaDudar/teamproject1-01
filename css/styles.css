@@ -240,13 +240,12 @@ button {
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--color-main-red);
-  
+
   color: var(--background-main);
 }
 
@@ -870,6 +869,11 @@ button {
   align-items: center;
   background-color: var(--color-main-red);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link-social:hover,
+.footer-link-social:focus {
+  background-color: var(--color-menu-btn);
 }
 
 .footer-social-link {
@@ -881,7 +885,10 @@ button {
   fill: #ffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.footer-social-item:hover,
+.footer-social-item:focus {
+  fill: var(--color-black-000000);
+}
 .social-icon {
   display: flex;
 }
@@ -889,12 +896,14 @@ button {
 .footer-contact-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+
+  /* gap: 12px; */
 }
 
 .footer-icons {
   fill: var(--color-main-red);
   color: var(--color-black-202020);
+  margin-right: 10px;
 }
 
 .footer-list-item {
@@ -904,6 +913,8 @@ button {
   font-size: 18px;
   line-height: calc(41 / 18);
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .footer-active {
