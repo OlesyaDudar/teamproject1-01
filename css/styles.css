@@ -700,13 +700,20 @@ button {
 
 .contact {
   background: var(--color-additional-background);
-  padding-top: 25px;
+  padding-top: 90px;
+  padding-bottom: 61px;
+  margin-left: 0;
+
+  background-image: url(../images/contacts-img.png);
+  background-repeat: no-repeat;
+  background-position: right 142px top 25px;
+  background-size: contain;
 }
 
 .contact-container {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12px; */
 }
 
 .contact-wrapper {
@@ -738,6 +745,7 @@ button {
   line-height: 1.255;
   letter-spacing: 0.03em;
   margin-bottom: 31px;
+  width: 558px;
 }
 
 .contact-title span {
@@ -751,9 +759,11 @@ button {
   line-height: 1.55;
   letter-spacing: 0.03em;
   margin-bottom: 23px;
+  max-width: 531px;
 }
 
 .contact-form {
+  max-width: 533px;
 }
 
 .form-input {

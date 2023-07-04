@@ -1,581 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Lancer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canvas Lancer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Poppins:wght@300;400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header-container">
-      <a class="header-logo" href="./index.html">
-        <img src="./images/logo.svg" alt="Canvas Logo" width="50" />
-        Canvas Lancer
-      </a>
-      <nav class="header-nav">
-        <ul class="heder-nav-list">
-          <li>
-            <a class="header-nav-link" href="#hero">Home</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#about">About us</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#services">Services</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#reviews">Testimonials</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="">Faqs</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header-btn" type="button" data-modal-open>Contact Us</button>
-    </div>
-    <div>
-
-    </div>
-  </header>
-  <main>
-    <section id="hero" class="hero">
-      <div class="container hero-container">
-        <p class="hero-text">
-          Welcome To <span class="hero-text-part">Canavas Lancer</span>
-        </p>
-
-        <h1 class="hero-title">
-          Designing the Future with
-          <span class="canvas-underline">Canvas Lancer</span>
-        </h1>
-
-        <p class="hero-text hero-descr">
-          Lorem ipsum dolor sit amet consectetur. Aliquam quisque cursus proin
-          adipiscing quis diam. Eu fringilla elit commodo nec aliquet. Augue
-          pharetra nibh co
-        </p>
-
-        <ul class="hero-btns-list">
-          <li><button class="hero-btn" type="button">Hire Us</button></li>
-          <li>
-            <button class="hero-btn" type="button">View Portfolio</button>
-          </li>
-        </ul>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">
+          <img src="./images/logo.svg" alt="Canvas Logo" width="50" />
+          Canvas Lancer
+        </a>
+        <nav class="header-nav">
+          <ul class="heder-nav-list">
+            <li>
+              <a class="header-nav-link" href="#hero">Home</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#about">About us</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#services">Services</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#reviews">Testimonials</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="">Faqs</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header-btn" type="button" data-modal-open>
+          Contact Us
+        </button>
       </div>
-    </section>
-
-    <section class="about-section" id="about">
-      <div class="container container-about">
-        <ul class="about-list">
-          <li class="img-item-one">
-            <img srcset="./images/about1.jpg 1x, ./images/about1-2x.jpg 2x" src="./images/about1.jpg" alt="team"
-              width="398" height="422" />
-          </li>
-          <li class="img-item-two">
-            <img srcset="./images/about2.jpg 1x, ./images/about2-2x.jpg
-              2xsrc=" ./images/about2.jpg" alt="team with laptop" width="301" height="319" />
-          </li>
-        </ul>
-        <div>
-          <p class="about-subtitle">
-            <span class="about-subtitle-part">About</span> CanvasLancer
-          </p>
-          <h2 class="about-title">
-            Introduction To Best
-            <span class="about-title-part">Digital Agency</span>
-          </h2>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-            enim id gravida pulvinar. Tristique consectetur mi curabitur
-            congue enim dignissim amet justo. Porta morbi nulla aliquet
-            adipiscing. Sed diam mauris erat faucibus eu posuere ultricies
-            quisque amet. Quam pellentesque in tristique
-          </p>
-          <p class="about-text">
-            sed neque scelerisque quam pulvinar. Risus dictum elementum lacus
-            urna. Neque eget sagittis vulputate nam id morbi id. Aliquam
-            molestie posuere pulvinar arcu
+      <div></div>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-container">
+          <p class="hero-text">
+            Welcome To <span class="hero-text-part">Canavas Lancer</span>
           </p>
 
-          <button class="about-button" type="button">Hire us</button>
+          <h1 class="hero-title">
+            Designing the Future with
+            <span class="canvas-underline">Canvas Lancer</span>
+          </h1>
+
+          <p class="hero-text hero-descr">
+            Lorem ipsum dolor sit amet consectetur. Aliquam quisque cursus proin
+            adipiscing quis diam. Eu fringilla elit commodo nec aliquet. Augue
+            pharetra nibh co
+          </p>
+
+          <ul class="hero-btns-list">
+            <li><button class="hero-btn" type="button">Hire Us</button></li>
+            <li>
+              <button class="hero-btn" type="button">View Portfolio</button>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="services" id="services">
-      <div class="container services-container">
-        <div class="services-text-container">
-          <p class="services-subtitle">
-            What We Are&nbsp;<span class="services-accent">Offering</span>
-          </p>
-          <h2 class="services-title">
-            <span class="services-accent">Services</span> We Can Offer You !
-          </h2>
-          <p class="services-text">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-            enim id gravida pulvinar. Tristique consectetur mi curabitur
-            congue enim dignissim amet justo. Porta morbi nulla aliquet
-            adipiscing. Sed diam mauris erat faucibus eu posuere ultricies
-            quisque amet. Quam pellentesque in tristique
-          </p>
-          <button class="services-btn" type="button">Hire Us</button>
+      <section class="about-section" id="about">
+        <div class="container container-about">
+          <ul class="about-list">
+            <li class="img-item-one">
+              <img
+                srcset="./images/about1.jpg 1x, ./images/about1-2x.jpg 2x"
+                src="./images/about1.jpg"
+                alt="team"
+                width="398"
+                height="422"
+              />
+            </li>
+            <li class="img-item-two">
+              <img
+                srcset="./images/about2.jpg 1x, ./images/about2-2x.jpg 2x"
+                src="./images/about2.jpg"
+                alt="team with laptop"
+                width="301"
+                height="319"
+              />
+            </li>
+          </ul>
+          <div>
+            <p class="about-subtitle">
+              <span class="about-subtitle-part">About</span> CanvasLancer
+            </p>
+            <h2 class="about-title">
+              Introduction To Best
+              <span class="about-title-part">Digital Agency</span>
+            </h2>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+              enim id gravida pulvinar. Tristique consectetur mi curabitur
+              congue enim dignissim amet justo. Porta morbi nulla aliquet
+              adipiscing. Sed diam mauris erat faucibus eu posuere ultricies
+              quisque amet. Quam pellentesque in tristique
+            </p>
+            <p class="about-text">
+              sed neque scelerisque quam pulvinar. Risus dictum elementum lacus
+              urna. Neque eget sagittis vulputate nam id morbi id. Aliquam
+              molestie posuere pulvinar arcu
+            </p>
+
+            <button class="about-button" type="button">Hire us</button>
+          </div>
         </div>
-        <ul class="services-list">
-          <li class="services-list-item">
-            <div class="services-icons">
-              <svg class="services-icon" width="49" height="49">
-                <use href="./images/icons.svg#icon-ux-ui"></use>
-              </svg>
-            </div>
-            <h3 class="services-list-title">UI/UX</h3>
-            <p class="services-list-text">
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
-              arcu enim id gravida pulvinar. Tristique
-            </p>
-          </li>
-          <li class="services-list-item">
-            <div class="services-icons">
-              <svg class="services-icon" width="49" height="49">
-                <use href="./images/icons.svg#icon-development"></use>
-              </svg>
-            </div>
-            <h3 class="services-list-title">Development</h3>
-            <p class="services-list-text">
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
-              arcu enim id gravida pulvinar. Tristique
-            </p>
-          </li>
-          <li class="services-list-item">
-            <div class="services-icons">
-              <svg class="services-icon" width="49" height="49">
-                <use href="./images/icons.svg#icon-mob-dev"></use>
-              </svg>
-            </div>
-            <h3 class="services-list-title">Mobile Development</h3>
-            <p class="services-list-text">
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
-              arcu enim id gravida pulvinar. Tristique
-            </p>
-          </li>
-          <li class="services-list-item">
-            <div class="services-icons">
-              <svg class="services-icon" width="49" height="49">
-                <use href="./images/icons.svg#icon-seo"></use>
-              </svg>
-            </div>
-            <h3 class="services-list-title">SEO</h3>
-            <p class="services-list-text">
-              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
-              arcu enim id gravida pulvinar. Tristique
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
 
-    <section id="portfolio" class="portfolio">
-      <div class="container portfolio-container">
-        <p class="portfolio-subtitle">Our Portfolio</p>
-        <h2 class="portfolio-title">
-          <span>Projects</span> We Have Completed
-        </h2>
-        <ul class="portfolio-menu">
-          <li class="portfolio-menu-item">
-            <button class="portfolio-menu-btn" type="button">All</button>
-          </li>
-          <li class="portfolio-menu-item">
-            <button class="portfolio-menu-btn" type="button">UI/UX</button>
-          </li>
-          <li class="portfolio-menu-item">
-            <button class="portfolio-menu-btn" type="button">
-              Development
-            </button>
-          </li>
-          <li class="portfolio-menu-item">
-            <button class="portfolio-menu-btn" type="button">
-              Mobile Development
-            </button>
-          </li>
-          <li class="portfolio-menu-item">
-            <button class="portfolio-menu-btn" type="button">SEO</button>
-          </li>
-        </ul>
-        <ul class="portfolio-list">
-          <li class="portfolio-list-item">
-            <img srcset="./images/project1.jpg 1x, ./images/project1-2x.jpg 2x" src="./images/project1.jpg"
-              alt="team meeting" width="374" height="439" />
-          </li>
-          <li class="portfolio-list-item">
-            <img srcset="./images/project2.jpg 1x, ./images/project2-2x.jpg 2x" src="./images/project2.jpg"
-              alt="man with nootebook" width="374" height="513" />
-          </li>
-          <li class="portfolio-list-item">
-            <img srcset="./images/project3.jpg 1x, ./images/project3-2x.jpg 2x" src="./images/project3.jpg"
-              alt="man with pc" width="374" height="439" />
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="reviews" id="reviews">
-      <div class="container">
-        <p class="reviews-text">
-          Customer <span class="reviews-text-red">Feedback</span>
-        </p>
-        <h2 class="reviews-title">
-          What Our <span class="reviews-title-red">Customer</span> Say About
-          Us
-        </h2>
-        <ul class="reviews-list">
-          <li class="reviews-item">
-            <div class="background-icons">
-              <svg class="reviews-icons" width="25" height="100">
-                <use href="./images/icons.svg#icon-untitled"></use>
-              </svg>
-            </div>
-            <h3 class="reviews-subtitle">Name Here</h3>
-            <ul class="list-stars">
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-            </ul>
-
-            <p class="small-text">
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
-              tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
-              donec
+      <section class="services" id="services">
+        <div class="container services-container">
+          <div class="services-text-container">
+            <p class="services-subtitle">
+              What We Are&nbsp;<span class="services-accent">Offering</span>
             </p>
-          </li>
-          <li class="reviews-item">
-            <div class="background-icons">
-              <svg class="reviews-icons" width="25" height="100">
-                <use href="./images/icons.svg#icon-untitled"></use>
-              </svg>
-            </div>
-            <h3 class="reviews-subtitle">Name Here</h3>
-            <ul class="list-stars">
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-            </ul>
-            <p class="small-text">
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
-              tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
-              donec
+            <h2 class="services-title">
+              <span class="services-accent">Services</span> We Can Offer You !
+            </h2>
+            <p class="services-text">
+              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+              enim id gravida pulvinar. Tristique consectetur mi curabitur
+              congue enim dignissim amet justo. Porta morbi nulla aliquet
+              adipiscing. Sed diam mauris erat faucibus eu posuere ultricies
+              quisque amet. Quam pellentesque in tristique
             </p>
-          </li>
-          <li class="reviews-item">
-            <div class="background-icons">
-              <svg class="reviews-icons" width="25" height="100">
-                <use href="./images/icons.svg#icon-untitled"></use>
-              </svg>
-            </div>
-            <h3 class="reviews-subtitle">Name Here</h3>
-            <ul class="list-stars">
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
+            <button class="services-btn" type="button">Hire Us</button>
+          </div>
+          <ul class="services-list">
+            <li class="services-list-item">
+              <div class="services-icons">
+                <svg class="services-icon" width="49" height="49">
+                  <use href="./images/icons.svg#icon-ux-ui"></use>
                 </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
+              </div>
+              <h3 class="services-list-title">UI/UX</h3>
+              <p class="services-list-text">
+                Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
+                arcu enim id gravida pulvinar. Tristique
+              </p>
+            </li>
+            <li class="services-list-item">
+              <div class="services-icons">
+                <svg class="services-icon" width="49" height="49">
+                  <use href="./images/icons.svg#icon-development"></use>
                 </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
+              </div>
+              <h3 class="services-list-title">Development</h3>
+              <p class="services-list-text">
+                Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
+                arcu enim id gravida pulvinar. Tristique
+              </p>
+            </li>
+            <li class="services-list-item">
+              <div class="services-icons">
+                <svg class="services-icon" width="49" height="49">
+                  <use href="./images/icons.svg#icon-mob-dev"></use>
                 </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
+              </div>
+              <h3 class="services-list-title">Mobile Development</h3>
+              <p class="services-list-text">
+                Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
+                arcu enim id gravida pulvinar. Tristique
+              </p>
+            </li>
+            <li class="services-list-item">
+              <div class="services-icons">
+                <svg class="services-icon" width="49" height="49">
+                  <use href="./images/icons.svg#icon-seo"></use>
                 </svg>
-              </li>
-              <li class="item-stars">
-                <svg class="icon-stars" width="21" height="21">
-                  <use href="./images/icons.svg#icon-Star-1"></use>
-                </svg>
-              </li>
-            </ul>
-            <p class="small-text">
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
-              tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
-              donec
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container contact-container">
-        <div class="contact-wrapper">
-          <p class="contact-subtitle">Contact Us</p>
-          <h2 class="contact-title">
-            <span>Contact</span> Us & We Can Work Together
-          </h2>
-          <p class="contact-desc">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
-            enim id gravida pulvinar. Tristique consectetur mi curabitur
-            congue enim dignissim
-          </p>
-          <form class="contact-form">
-            <label for="form-name" class="visually-hidden">Your name</label>
-            <input type="text" name="form-name" id="form-name" class="form-input" placeholder="Your Name" />
-
-            <label for="form-email" class="visually-hidden">Your email</label>
-            <input type="email" name="form-email" id="form-email" class="form-input" placeholder="Your Email" />
-
-            <label for="form-text"></label>
-            <textarea name="form-text" id="form-text" class="form-message" placeholder="Your Message"></textarea>
-
-            <button type="submit" class="form-btn">Submit Message</button>
-          </form>
+              </div>
+              <h3 class="services-list-title">SEO</h3>
+              <p class="services-list-text">
+                Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at
+                arcu enim id gravida pulvinar. Tristique
+              </p>
+            </li>
+          </ul>
         </div>
-        <img srcset="
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container portfolio-container">
+          <p class="portfolio-subtitle">Our Portfolio</p>
+          <h2 class="portfolio-title">
+            <span>Projects</span> We Have Completed
+          </h2>
+          <ul class="portfolio-menu">
+            <li class="portfolio-menu-item">
+              <button class="portfolio-menu-btn" type="button">All</button>
+            </li>
+            <li class="portfolio-menu-item">
+              <button class="portfolio-menu-btn" type="button">UI/UX</button>
+            </li>
+            <li class="portfolio-menu-item">
+              <button class="portfolio-menu-btn" type="button">
+                Development
+              </button>
+            </li>
+            <li class="portfolio-menu-item">
+              <button class="portfolio-menu-btn" type="button">
+                Mobile Development
+              </button>
+            </li>
+            <li class="portfolio-menu-item">
+              <button class="portfolio-menu-btn" type="button">SEO</button>
+            </li>
+          </ul>
+          <ul class="portfolio-list">
+            <li class="portfolio-list-item">
+              <img
+                srcset="./images/project1.jpg 1x, ./images/project1-2x.jpg 2x"
+                src="./images/project1.jpg"
+                alt="team meeting"
+                width="374"
+                height="439"
+              />
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                srcset="./images/project2.jpg 1x, ./images/project2-2x.jpg 2x"
+                src="./images/project2.jpg"
+                alt="man with nootebook"
+                width="374"
+                height="513"
+              />
+            </li>
+            <li class="portfolio-list-item">
+              <img
+                srcset="./images/project3.jpg 1x, ./images/project3-2x.jpg 2x"
+                src="./images/project3.jpg"
+                alt="man with pc"
+                width="374"
+                height="439"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <p class="reviews-text">
+            Customer <span class="reviews-text-red">Feedback</span>
+          </p>
+          <h2 class="reviews-title">
+            What Our <span class="reviews-title-red">Customer</span> Say About
+            Us
+          </h2>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <div class="background-icons">
+                <svg class="reviews-icons" width="25" height="100">
+                  <use href="./images/icons.svg#icon-untitled"></use>
+                </svg>
+              </div>
+              <h3 class="reviews-subtitle">Name Here</h3>
+              <ul class="list-stars">
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+              </ul>
+
+              <p class="small-text">
+                Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
+                tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
+                donec
+              </p>
+            </li>
+            <li class="reviews-item">
+              <div class="background-icons">
+                <svg class="reviews-icons" width="25" height="100">
+                  <use href="./images/icons.svg#icon-untitled"></use>
+                </svg>
+              </div>
+              <h3 class="reviews-subtitle">Name Here</h3>
+              <ul class="list-stars">
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+              </ul>
+              <p class="small-text">
+                Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
+                tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
+                donec
+              </p>
+            </li>
+            <li class="reviews-item">
+              <div class="background-icons">
+                <svg class="reviews-icons" width="25" height="100">
+                  <use href="./images/icons.svg#icon-untitled"></use>
+                </svg>
+              </div>
+              <h3 class="reviews-subtitle">Name Here</h3>
+              <ul class="list-stars">
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+                <li class="item-stars">
+                  <svg class="icon-stars" width="21" height="21">
+                    <use href="./images/icons.svg#icon-Star-1"></use>
+                  </svg>
+                </li>
+              </ul>
+              <p class="small-text">
+                Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
+                tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
+                donec
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container contact-container">
+          <div class="contact-wrapper">
+            <p class="contact-subtitle">Contact Us</p>
+            <h2 class="contact-title">
+              <span>Contact</span> Us &amp; We Can Work Together
+            </h2>
+            <p class="contact-desc">
+              Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+              enim id gravida pulvinar. Tristique consectetur mi curabitur
+              congue enim dignissim
+            </p>
+            <form class="contact-form">
+              <label for="form-name" class="visually-hidden">Your name</label>
+              <input
+                type="text"
+                name="form-name"
+                id="form-name"
+                class="form-input"
+                placeholder="Your Name"
+              />
+
+              <label for="form-email" class="visually-hidden">Your email</label>
+              <input
+                type="email"
+                name="form-email"
+                id="form-email"
+                class="form-input"
+                placeholder="Your Email"
+              />
+
+              <label for="form-text"></label>
+              <textarea
+                name="form-text"
+                id="form-text"
+                class="form-message"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="form-btn">Submit Message</button>
+            </form>
+          </div>
+          <!-- <img srcset="
               ./images/contacts-img.png    1x,
               ./images/contacts-img-2x.png 2x
-            " src="./images/contacts-img.png" alt="guy with a phone" width="603" height="829" />
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-main-resurs">
-          <div class="footer-logo">
-            <a class="footer-link" href="./index.html">
-              <img src="./images/logo.svg" alt="footer-logo" width="50" height="53" />Canvas Lancer</a>
-          </div>
-          <p class="footer-text">
-            Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae
-            suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla
-            in
-          </p>
-
-          <div class="social-icon">
-            <ul class="footer-list-icon">
-              <li class="footer-social-link">
-                <a class="footer-link-social" href="">
-                  <svg class="footer-social-item" width="16" height="16">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social-link">
-                <a class="footer-link-social" href="">
-                  <svg class="footer-social-item" width="16" height="16">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social-link">
-                <a class="footer-link-social" href="">
-                  <svg class="footer-social-item" width="16" height="16">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social-link">
-                <a class="footer-link-social" href="">
-                  <svg class="footer-social-item" width="16" height="16">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+            " src="./images/contacts-img.png" alt="guy with a phone" width="603" height="829" /> -->
         </div>
-        <div class="footer-active">
-          <div class="footer-services">
-            <p class="footer-title">Services</p>
-            <ul class="footer-list">
-              <li><a class="footer-list-item" href="">UI/UX</a></li>
-              <li><a class="footer-list-item" href="">Website Dev</a></li>
-              <li><a class="footer-list-item" href="">Mobile Dev</a></li>
-              <li><a class="footer-list-item" href="">SEO</a></li>
-            </ul>
-          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="footer-main-resurs">
+            <div class="footer-logo">
+              <a class="footer-link" href="./index.html">
+                <img
+                  src="./images/logo.svg"
+                  alt="footer-logo"
+                  width="50"
+                  height="53"
+                />Canvas Lancer</a
+              >
+            </div>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae
+              suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla
+              in
+            </p>
 
-          <div class="footer-resources">
-            <p class="footer-title">Resources</p>
-            <ul class="footer-list">
-              <li><a class="footer-list-item" href="">Compliance</a></li>
-              <li><a class="footer-list-item" href="">Case Studies</a></li>
-              <li><a class="footer-list-item" href="">Webinars</a></li>
-              <li><a class="footer-list-item" href="">Developers</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <p class="footer-title"> Contact Information</p>
-            <address>
-              <ul class="footer-list">
-                <li class="footer-contact-item">
-
-                  <a class="footer-list-item" href="mailto:canvaslancer@gmail.com"> <svg class="footer-icons" width="24"
-                      height="24">
-                      <use href="./images/icons.svg#icon-sms"></use>
-                    </svg> canvaslancer@gmail.com</a>
+            <div class="social-icon">
+              <ul class="footer-list-icon">
+                <li class="footer-social-link">
+                  <a class="footer-link-social" href="">
+                    <svg class="footer-social-item" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-contact-item">
-
-                  <a class="footer-list-item" href="tel:+00012345678"> <svg class="footer-icons" width="24" height="24">
-                      <use href="./images/icons.svg#icon-call"></use>
-                    </svg> +00012345678 </a>
+                <li class="footer-social-link">
+                  <a class="footer-link-social" href="">
+                    <svg class="footer-social-item" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-contact-item">
-
-                  <a class="footer-list-item" href=""> <svg class="footer-icons" width="24" height="24">
-                      <use href="./images/icons.svg#icon-location"></use>
-                    </svg> Lorem Ipsum Dummy text
+                <li class="footer-social-link">
+                  <a class="footer-link-social" href="">
+                    <svg class="footer-social-item" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social-link">
+                  <a class="footer-link-social" href="">
+                    <svg class="footer-social-item" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
+          <div class="footer-active">
+            <div class="footer-services">
+              <p class="footer-title">Services</p>
+              <ul class="footer-list">
+                <li><a class="footer-list-item" href="">UI/UX</a></li>
+                <li><a class="footer-list-item" href="">Website Dev</a></li>
+                <li><a class="footer-list-item" href="">Mobile Dev</a></li>
+                <li><a class="footer-list-item" href="">SEO</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-resources">
+              <p class="footer-title">Resources</p>
+              <ul class="footer-list">
+                <li><a class="footer-list-item" href="">Compliance</a></li>
+                <li><a class="footer-list-item" href="">Case Studies</a></li>
+                <li><a class="footer-list-item" href="">Webinars</a></li>
+                <li><a class="footer-list-item" href="">Developers</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <p class="footer-title">Contact Information</p>
+              <address>
+                <ul class="footer-list">
+                  <li class="footer-contact-item">
+                    <a
+                      class="footer-list-item"
+                      href="mailto:canvaslancer@gmail.com"
+                    >
+                      <svg class="footer-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-sms"></use>
+                      </svg>
+                      canvaslancer@gmail.com</a
+                    >
+                  </li>
+                  <li class="footer-contact-item">
+                    <a class="footer-list-item" href="tel:+00012345678">
+                      <svg class="footer-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-call"></use>
+                      </svg>
+                      +00012345678
+                    </a>
+                  </li>
+                  <li class="footer-contact-item">
+                    <a class="footer-list-item" href="">
+                      <svg class="footer-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-location"></use>
+                      </svg>
+                      Lorem Ipsum Dummy text
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="footer-copyright-text">
+            Copyright &copy; Canvas Lancer, 2023. All rights reserved.
+          </p>
+          <ul class="footer-copyright-list">
+            <li class="footer-website-list">
+              <a class="footer-website" href="">Website Terms</a>
+            </li>
+            <li class="footer-privacy-list">
+              <a class="footer-privacy" href="">Privacy Policy</a>
+            </li>
+            <li class="footer-cookies-list">
+              <a class="footer-cookies" href="">Cookies Policy</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright">
-        <p class="footer-copyright-text">
-          Copyright &copy; Canvas Lancer, 2023. All rights reserved.
-        </p>
-        <ul class="footer-copyright-list">
-          <li class="footer-website-list">
-            <a class="footer-website" href="">Website Terms</a>
-          </li>
-          <li class="footer-privacy-list">
-            <a class="footer-privacy" href="">Privacy Policy</a>
-          </li>
-          <li class="footer-cookies-list">
-            <a class="footer-cookies" href="">Cookies Policy</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </footer>
 
-  </footer>
-
-
-
-
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal-btn" data-modal-close>
-        <svg class="modal_christ" width="8" height="8">
-          <use href="./images/icons.svg#icon-vector"></use>
-        </svg>
-      </button>
-      <p class="modal_p">Leave your contacts and we will call you back</p>
-      <form>
-        <div class="input-div">
-          <label for="user-name" class="label_name">Name</label>
-          <div class="input-div-icon">
-            <input type="text" class="modal_icon" name="user-name" id="user-name" />
-            <svg class="modal-svg" width="18" height="24">
-              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="input-div">
-          <label for="phone" class="label_name">Phone</label>
-          <div class="input-div-icon">
-            <input type="text" class="modal_icon" name="phone" id="phone" />
-            <svg class="modal-svg" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="input-div">
-          <label for="mailto" class="label_name">Email</label>
-          <div class="input-div-icon">
-            <input type="text" class="modal_icon" name="email" id="mailto" />
-            <svg class="modal-svg" width="18" height="24">
-              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="input-div-textarea">
-          <label for="user-comment" class="label_name">Comment</label>
-          <textarea class="modal_text" name="user-comment" id="user-comment" cols="360" rows="120"
-            placeholder="Text input"></textarea>
-
-        </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="input-check visually-hidden">
-          <label for="user-privacy" class="check-text">
-            <span class="span">
-              <svg class="" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal_christ" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <p class="modal_p">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="input-div">
+            <label for="user-name" class="label_name">Name</label>
+            <div class="input-div-icon">
+              <input
+                type="text"
+                class="modal_icon"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
-            </span> I accept the terms and conditions of the <a href="" class="labelspan"> Privacy
-              Policy</a>
-          </label>
-        </div>
-        <button type="submit" class="modal-buttom" data-modal-open="">Send</button>
-      </form>
+            </div>
+          </div>
+          <div class="input-div">
+            <label for="phone" class="label_name">Phone</label>
+            <div class="input-div-icon">
+              <input type="text" class="modal_icon" name="phone" id="phone" />
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-div">
+            <label for="mailto" class="label_name">Email</label>
+            <div class="input-div-icon">
+              <input type="text" class="modal_icon" name="email" id="mailto" />
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-div-textarea">
+            <label for="user-comment" class="label_name">Comment</label>
+            <textarea
+              class="modal_text"
+              name="user-comment"
+              id="user-comment"
+              cols="360"
+              rows="120"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox-div">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="input-check visually-hidden"
+            />
+            <label for="user-privacy" class="check-text">
+              <span class="span">
+                <svg class="" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="labelspan"> Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-buttom" data-modal-open="">
+            Send
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
-</body>
-
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
